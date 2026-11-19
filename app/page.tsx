@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 
@@ -7,10 +7,10 @@ export default function Home(){
 
   const students = [
     { id: 101, name: "Rahul", course: "BCA"},
-    { id: 101, name: "Aisha", course: "BCA"},
-    { id: 101, name: "Hithesh", course: "MCA"},
-    { id: 101, name: "Manish", course: "MCA"},
-    { id: 101, name: "Dinesh", course: "MCA"},
+    { id: 102, name: "Aisha", course: "BCA"},
+    { id: 103, name: "Hithesh", course: "MCA"},
+    { id: 104, name: "Manish", course: "MCA"},
+    { id: 105, name: "Dinesh", course: "MCA"},
   ];
 
   return(
@@ -26,14 +26,14 @@ export default function Home(){
 
       {/* Home Page*/}
 
-      {Page ==="home" && (
+      {page ==="home" && (
         <div>
           <h2>Welcome</h2>
           <p>Welcome to the Student Management System.</p>
         </div>
       )}
       {/* Student Page */}
-      {Page === "Students" &&(
+      {page === "students" &&(
         <div>
           <h2>Student Records</h2>
 
